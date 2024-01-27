@@ -1,8 +1,4 @@
---WITH src_listings AS (
---    SELECT * FROM ...
---)
---
---SELECT ...
+{{ config(materialized = 'view' )}} -- se crea como view porque se configuro en esta carpeta como tablas
 
 WITH src_listings AS (
     SELECT * FROM {{ ref("src_listings") }}
@@ -17,7 +13,7 @@ SELECT
         ELSE minimum_nights
     END AS minimum_nights,
     host_id,
-    REPLACE(price_str, '$', 9999) :: NUMBER(10, 2) AS price,
+    REPLACE(price_str, '$') :: NUMBER(10, 2) AS price,
     created_at,
     updated_at
 FROM src_listings
