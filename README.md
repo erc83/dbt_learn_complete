@@ -13,5 +13,7 @@ Try running the following commands:
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
+## input data model
 
+![input data model cloudinary](https://res.cloudinary.com/dhavhzmvy/image/upload/v1706296862/dbt-learn/input-data-model_vcyeds.png)
 
