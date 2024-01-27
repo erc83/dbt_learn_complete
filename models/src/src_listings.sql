@@ -1,6 +1,7 @@
 WITH raw_listings AS (
     --step 2
-    SELECT * FROM AIRBNB.RAW.RAW_LISTINGS
+    -- SELECT * FROM AIRBNB.RAW.RAW_LISTINGS
+    SELECT * FROM {{ source('airbnb', 'listings') }}
 )
 -- step 3
 SELECT
