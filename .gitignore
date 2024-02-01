@@ -5,3 +5,5 @@ logs/
 
 .dbt/profiles.yml
 
+models/dashboards.yml
+analyses/full_moon_no_sleep.sql
